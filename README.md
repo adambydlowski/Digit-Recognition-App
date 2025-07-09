@@ -38,11 +38,19 @@ This project combines modern deep learning with a user-friendly GUI to demonstra
 
 ##  Model Overview
 
-The neural network is a CNN trained on MNIST/EMNIST with the following setup:
-- 2 convolutional layers + max pooling
-- Fully connected layers with softmax output
-- Data augmentation via rotation, noise, and scaling
-- Achieves ~98% accuracy on standard digits
+###  Architecture:
+
+- 3 convolutional layers with batch normalization and ReLU activation
+
+- Max pooling after the first two convolutional layers
+
+- Fully connected classifier with dropout and softmax output
+
+####  Training techniques:
+
+- Data augmentation: rotation, noise, scaling
+
+- Trained with PyTorch, achieves ~98% accuracy on standard digit datasets
 
 Training of CNN is saved in `model/model_training.ipynb`
 
