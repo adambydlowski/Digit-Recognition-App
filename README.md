@@ -44,4 +44,6 @@ The neural network is a CNN trained on MNIST/EMNIST with the following setup:
 - Data augmentation via rotation, noise, and scaling
 - Achieves ~98% accuracy on standard digits
 
+Training of CNN is saved in `model/model_training.ipynb`
+
 ---
